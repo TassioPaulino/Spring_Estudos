@@ -40,5 +40,13 @@ public class DiretorEmpregado implements Empregados {
 	public String getRelatorio() {
 		return "Relatório gerado pelo DIRETOR:\n    " + novoRelatorio.getRelatorio() + "\n";
 	}
+	
+	public void initMetodo() {
+		System.out.println("O container Spring acabou de ser construido...");
+	}
+	
+	public void destroyMetodo() {
+		System.out.println("O container Spring está prestes a ser fechado.");
+	}
 
 }
