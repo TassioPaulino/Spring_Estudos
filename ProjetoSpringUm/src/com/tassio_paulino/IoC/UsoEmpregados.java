@@ -10,8 +10,16 @@ public class UsoEmpregados {
 		
 		ClassPathXmlApplicationContext contexto = new ClassPathXmlApplicationContext("applicationContext.xml");
 		
-		Empregados e1 = contexto.getBean("meuEmpregado", Empregados.class);
-		System.out.println(e1.getTarefas());
-		contexto.close();
+		ArrayList<Empregados> empregados = new ArrayList<Empregados>();
+		empregados.add(contexto.getBean("meuDiretor", Empregados.class));
+		empregados.add(contexto.getBean("meuGerente", Empregados.class));
+		empregados.add(contexto.getBean("meuSecretario", Empregados.class));
+		
+		for(int i = 0; i < empregados.size(); i++) {
+			System.out.println(empregados.get(i).getTarefas());
+			System.out.println(empregados.get(i).getRelatorio());
+		}
+		
+		contexto.close(); 
 	}	
 }

@@ -1,6 +1,5 @@
 package com.tassio_paulino.IoC;
 
-public interface Empregados {
-	public String getTarefas();
+public interface Reportavel {
 	public String getRelatorio();
 }

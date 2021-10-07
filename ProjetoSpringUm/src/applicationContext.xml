@@ -8,7 +8,22 @@
     http://www.springframework.org/schema/context 
     http://www.springframework.org/schema/context/spring-context-3.1.xsd
 ">
-<bean id ="meuEmpregado" class="com.tassio_paulino.IoC.DiretorEmpregado">
+
+<bean id="meuRelatorio" class="com.tassio_paulino.IoC.Relatorio"></bean>
+
+<bean id ="meuDiretor" class="com.tassio_paulino.IoC.DiretorEmpregado">
+    <constructor-arg ref="meuRelatorio"></constructor-arg>
 </bean>
+
+
+<bean id ="meuGerente" class="com.tassio_paulino.IoC.GerenteEmpregado">
+    <constructor-arg ref="meuRelatorio"></constructor-arg>
+</bean>
+
+
+<bean id ="meuSecretario" class="com.tassio_paulino.IoC.SecretarioEmpregado">
+    <constructor-arg ref="meuRelatorio"></constructor-arg>
+</bean>
+
 
 </beans>
