@@ -3,10 +3,15 @@ package com.tassio_paulino.IoC;
 public class SecretarioEmpregado implements Empregados {
 	
 	private Reportavel novoRelatorio;
-
-	public SecretarioEmpregado(Reportavel novoRelatorio) {
+	
+	public void setNovoRelatorio(Reportavel novoRelatorio) {
 		this.novoRelatorio = novoRelatorio;
 	}
+
+	/*
+	 * public SecretarioEmpregado(Reportavel novoRelatorio) { this.novoRelatorio =
+	 * novoRelatorio; }
+	 */
 
 	@Override
 	public String getTarefas() {

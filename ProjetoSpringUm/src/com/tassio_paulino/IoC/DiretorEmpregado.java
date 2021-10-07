@@ -4,7 +4,10 @@ public class DiretorEmpregado implements Empregados {
 	
 	private Reportavel novoRelatorio;
 	
-	
+	public void setNovoRelatorio(Reportavel novoRelatorio) {
+		this.novoRelatorio = novoRelatorio;
+	}
+
 	public DiretorEmpregado(Reportavel novoRelatorio) {
 		super();
 		this.novoRelatorio = novoRelatorio;

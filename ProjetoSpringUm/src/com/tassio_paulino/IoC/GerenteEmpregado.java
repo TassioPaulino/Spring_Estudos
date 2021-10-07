@@ -4,6 +4,10 @@ public class GerenteEmpregado implements Empregados {
 
 	private Reportavel novoRelatorio;
 	
+	public void setNovoRelatorio(Reportavel novoRelatorio) {
+		this.novoRelatorio = novoRelatorio;
+	}
+	
 	public GerenteEmpregado(Reportavel novoRelatorio) {
 		this.novoRelatorio = novoRelatorio;
 	}

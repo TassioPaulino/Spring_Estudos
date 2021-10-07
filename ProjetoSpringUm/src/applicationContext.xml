@@ -22,7 +22,7 @@
 
 
 <bean id ="meuSecretario" class="com.tassio_paulino.IoC.SecretarioEmpregado">
-    <constructor-arg ref="meuRelatorio"></constructor-arg>
+    <property name="novoRelatorio" ref="meuRelatorio"></property>
 </bean>
 
 
