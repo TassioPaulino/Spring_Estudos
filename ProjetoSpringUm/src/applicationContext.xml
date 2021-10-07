@@ -13,16 +13,22 @@
 
 <bean id ="meuDiretor" class="com.tassio_paulino.IoC.DiretorEmpregado">
     <constructor-arg ref="meuRelatorio"></constructor-arg>
+    <property name="email" value="diretor@empresa.com.br"></property>
+    <property name="nomeDaEmpresa" value="Empresa ltda"></property>
 </bean>
 
 
 <bean id ="meuGerente" class="com.tassio_paulino.IoC.GerenteEmpregado">
     <constructor-arg ref="meuRelatorio"></constructor-arg>
+    <property name="email" value="gerente@empresa.com.br"></property>
+    <property name="nomeDaEmpresa" value="Empresa ltda"></property>
 </bean>
 
 
 <bean id ="meuSecretario" class="com.tassio_paulino.IoC.SecretarioEmpregado">
     <property name="novoRelatorio" ref="meuRelatorio"></property>
+    <property name="email" value="secretaria@empresa.com.br"></property>
+    <property name="nomeDaEmpresa" value="Empresa ltda"></property>
 </bean>
 
 

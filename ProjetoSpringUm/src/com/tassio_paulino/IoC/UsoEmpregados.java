@@ -17,8 +17,12 @@ public class UsoEmpregados {
 		
 		for(int i = 0; i < empregados.size(); i++) {
 			System.out.println(empregados.get(i).getTarefas());
+			System.out.println(empregados.get(i).getEmail());
+			System.out.println(empregados.get(i).getNomeDaEmpresa());
 			System.out.println(empregados.get(i).getRelatorio());
+			System.out.println("*************************************************************");
 		}
+		
 		
 		contexto.close(); 
 	}	

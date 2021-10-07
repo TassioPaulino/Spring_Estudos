@@ -3,7 +3,27 @@ package com.tassio_paulino.IoC;
 public class SecretarioEmpregado implements Empregados {
 	
 	private Reportavel novoRelatorio;
+	private String email;
+	private String nomeDaEmpresa;
 	
+	
+	
+	public String getEmail() {
+		return email;
+	}
+
+	public void setEmail(String email) {
+		this.email = email;
+	}
+
+	public String getNomeDaEmpresa() {
+		return nomeDaEmpresa;
+	}
+
+	public void setNomeDaEmpresa(String nomeDaEmpresa) {
+		this.nomeDaEmpresa = nomeDaEmpresa;
+	}
+
 	public void setNovoRelatorio(Reportavel novoRelatorio) {
 		this.novoRelatorio = novoRelatorio;
 	}
