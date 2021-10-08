@@ -8,15 +8,22 @@ public class VendedorExperiente implements Empregados {
 
 	private ReportavelFinanceiro novoRelatorio;
 	
-	@Autowired
-	public VendedorExperiente(ReportavelFinanceiro novoRelatorio) {
-		this.novoRelatorio = novoRelatorio;
-	}
+	/*
+	 * @Autowired public VendedorExperiente(ReportavelFinanceiro novoRelatorio) {
+	 * this.novoRelatorio = novoRelatorio; }
+	 */
 
+	
+	
 	@Override
 	public String getTarefas() {
 		// TODO Auto-generated method stub
 		return "Vender os produtos da empresa.";
+	}
+
+	@Autowired
+	public void setNovoRelatorio(ReportavelFinanceiro novoRelatorio) {
+		this.novoRelatorio = novoRelatorio;
 	}
 
 	@Override
