@@ -1,12 +1,14 @@
 package com.tassio_paulino.annotations;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.stereotype.Component;
 
 @Component
 public class VendedorExperiente implements Empregados {
 
 	@Autowired
+	@Qualifier("relatorioFinanceiroTrim4")
 	private ReportavelFinanceiro novoRelatorio;
 	
 	/*
